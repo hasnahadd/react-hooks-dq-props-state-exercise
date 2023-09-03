@@ -8,6 +8,7 @@ function HogBoss() {
 
   function handleChangeEyeColor(e) {
     setEyeColor(e.target.value);
+    // console.log(e.target.value);
   }
 
   return (
@@ -40,9 +41,9 @@ function HogBoss() {
         <img id="boss-blaster" src={Boss} alt="" />
       </div>
       <ul className="hoglist">
-        <BabyHog />
-        <BabyHog />
-        <BabyHog />
+        <BabyHog eyeColor={eyeColor} id={1}/>
+        <BabyHog eyeColor={eyeColor} id={2} />
+        <BabyHog eyeColor={eyeColor} id={3}/>
       </ul>
     </div>
   );
